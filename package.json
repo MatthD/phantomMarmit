@@ -1,0 +1,30 @@
+{
+  "name": "phantommarmit",
+  "version": "1.0.0",
+  "description": "A simple test buster for marmiton",
+  "main": "dist/main.js",
+  "repository": "https://github.com/MatthD/phantomMarmit",
+  "author": "Matthias <matthias.dieudonne@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.11.2",
+    "@types/puppeteer": "1.6.2",
+    "gts": "^3.0.1",
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.0.3",
+    "webpack-cli": "^4.2.0"
+  },
+  "scripts": {
+    "start": "tsc --watch",
+    "publish-phantom": "phantombuster dist/main.js",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "test": "jest"
+  },
+  "dependencies": {}
+}
